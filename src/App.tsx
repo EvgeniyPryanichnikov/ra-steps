@@ -10,8 +10,8 @@ function App() {
   const [data, setData] = useState<ListItem>({
     date: '',
     distance: '',
-    id: '',
-    // onClickDelete: (id:string) => void,
+    id: ''
+    // onClickDelete?: (id:string) => void,
   })
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,7 +25,7 @@ function App() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (list.map((it: { date: string }) => it.date).includes(data.date)) {
+    if (list.map((el: { date: string }) => el.date).includes(data.date)) {
       const newList = list.slice(0);
       const el = newList.find((el: ListItem) => el.date === data.date);
       if (!el) return;
