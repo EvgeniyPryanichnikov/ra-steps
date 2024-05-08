@@ -1,0 +1,29 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.containerForm {
+  display: flex;
+  gap: 10px;
+}
+
+.title__container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list__item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px seagreen solid;
+  align-items: center;
+}
